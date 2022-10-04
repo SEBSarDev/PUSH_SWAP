@@ -15,5 +15,6 @@ We can only use some movement to sort a serie of number thanks to two stacks:
 - rrb (reverse rotate b) shift down all element of stack b by 1.
 - rrr (reverse rotate both) shift down all element of stack a and stack b by 1.
 
-I used the radix sort for this exercise. It is not the most optimal algorithm for a very large number of digits, but it has the advantage of being very stable. Indeed, all the digits are change for their place number. Ex: if I had to sort 3 | -1 | 200 | 4 | -45
+I used the radix sort for this exercise. It is not the most optimal algorithm for a small list of digits, but it has the advantage of being very stable. Indeed, all the digits are change for their place number. Ex: if I had to sort 3 | -1 | 200 | 4 | -45
 The new list of numbers will look like this  2 |  1 | 4   | 3 |  0
+Then these digits will be convert in binary so we can sort them by unit, then by tens, hundreds, etc. easily.
